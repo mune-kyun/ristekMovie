@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import MovieCard from "./MovieCard";
 
-export default function MovieCardById({ id }) {
+export default function MovieCardById({ id, cardMode = 0 }) {
   const [data, setdata] = useState("");
 
   useEffect(() => {
@@ -15,7 +15,7 @@ export default function MovieCardById({ id }) {
   return (
     <MovieCard
       data={data}
-      cardMode={1}
+      cardMode={cardMode}
       deleteOption={true}
       showOption={false}
     />

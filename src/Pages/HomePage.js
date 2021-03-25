@@ -1,5 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import MovieCard from "../Components/MovieCard";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import "../css/HomePage.css";
 
@@ -20,7 +22,8 @@ export default function HomePage() {
   }
 
   function handleButton() {
-    alert(search);
+    toast.success("Searching for  " + search);
+    setsearch("");
     if (search != "") {
       fetch(API_SEARCH + search.replace(/\s/g, "+"))
         .then((response) => response.json())
@@ -38,6 +41,7 @@ export default function HomePage() {
           type="text"
           placeholder="Search movie by title..."
           onChange={handleSearch}
+          value={search}
         />
         <button class="search-button" onClick={handleButton}>
           <i class="fa fa-search"></i>
@@ -48,6 +52,7 @@ export default function HomePage() {
           return <MovieCard data={result} />;
         })}
       </div>
+      <ToastContainer position="top-right" autoClose={3000} />
     </div>
   );
 }
@@ -55,7 +60,7 @@ export default function HomePage() {
 const API_KEY = "?api_key=d15653e03aaf16d4973082761657a24f";
 
 const API =
-  "https://api.themoviedb.org/3/movie/top_rated" +
+  "https://api.themoviedb.org/3/movie/popular" +
   API_KEY +
   "&language=en-US&page=1";
 

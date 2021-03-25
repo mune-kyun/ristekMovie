@@ -26,8 +26,8 @@ function MovieCard({
 
   function handleDelete(id) {
     let key = "";
-    if (cardMode == 1) key = "liked-data";
-    else if (cardMode == 2) key = "bookmarked-data";
+    if (cardMode == 0) key = "liked-data";
+    else if (cardMode == 1) key = "bookmarked-data";
     let list =
       (localStorage.getItem(key) && JSON.parse(localStorage.getItem(key))) ||
       [];
