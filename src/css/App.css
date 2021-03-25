@@ -14,6 +14,7 @@ nav {
 }
 
 .nav-li {
+  font-family: "Lato", sans-serif;
   margin: 0 10px 0 10px;
   padding: 10px;
 }
@@ -31,10 +32,12 @@ a:active {
 }
 
 .nav-li:hover {
+  background-color: #0e1111;
   font-weight: bolder;
 }
 
 footer {
+  font-family: "Lato", sans-serif;
   padding: 10px;
   background-color: #092c50;
   color: white;
