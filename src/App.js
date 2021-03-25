@@ -20,7 +20,7 @@ function App() {
             <div class="nav-flex-left">
               <li class="nav-li">
                 <Link to="/" style={linkStyle}>
-                  <a>HOME</a>
+                  <a>ZaMovie</a>
                 </Link>
               </li>
             </div>

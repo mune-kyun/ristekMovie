@@ -28,12 +28,12 @@ a:active {
 }
 
 .nav-li * {
+  font-size: larger;
   color: white;
 }
 
 .nav-li:hover {
   background-color: #0e1111;
-  font-weight: bolder;
 }
 
 footer {

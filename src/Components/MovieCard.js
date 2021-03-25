@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -42,7 +42,6 @@ function MovieCard({
   return (
     <div class="card">
       <img src={API + data.poster_path} />
-
       <div class="card-info">
         <Link to={"/detailPage/" + data.id} style={{ textDecoration: "none" }}>
           <div class="title">{data.title}</div>

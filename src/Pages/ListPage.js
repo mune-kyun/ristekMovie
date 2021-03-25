@@ -25,7 +25,7 @@ export default function ListPage({ localData }) {
           return (
             <MovieCardById
               id={result}
-              cardMode={localData == "liked-page" ? 0 : 1}
+              cardMode={localData == "liked-data" ? 0 : 1}
             />
           );
         })}
