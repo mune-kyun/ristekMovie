@@ -1,0 +1,42 @@
+nav {
+  background-color: #092c50;
+}
+
+.nav-ul,
+.nav-flex-left,
+.nav-flex-right {
+  display: flex;
+}
+
+.nav-ul {
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.nav-li {
+  margin: 0 10px 0 10px;
+  padding: 10px;
+}
+
+.nav-li a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-li * {
+  color: white;
+}
+
+.nav-li:hover {
+  font-weight: bolder;
+}
+
+footer {
+  padding: 10px;
+  background-color: #092c50;
+  color: white;
+  text-align: center;
+}

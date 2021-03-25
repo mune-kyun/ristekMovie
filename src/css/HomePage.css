@@ -1,0 +1,46 @@
+.container {
+  min-height: 100vh;
+  background-color: #001f3f;
+  text-align: center;
+}
+
+.movie-list {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.search-feature {
+  justify-content: center;
+}
+
+.search-input {
+  margin-right: 0px;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-input:focus {
+  color: black;
+}
+
+.search-button {
+  margin-left: 0px;
+  border-radius: 0px 5px 5px 0;
+  background: black;
+}
+
+.search-button:hover {
+  cursor: pointer;
+}
+
+.search-input,
+.search-button {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  display: inline-block;
+  border: 3px solid black;
+  outline: none;
+  color: white;
+}

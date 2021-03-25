@@ -1,0 +1,6 @@
+Beberapa depedency yang dipakai:
+	sudo npm install react-router-dom
+	sudo npm install --save react-toastify
+
+Run rca:
+	sudo npm run start
